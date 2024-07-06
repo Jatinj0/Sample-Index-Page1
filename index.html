@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFIT</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT LINKS (POPPINS)-->
+
+    <!--FONT LINKS (POPPINS)-->
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <img src="Images/logo.png" alt="" class="logo">
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About us</li>
+        </ul>
+        <button class="nav-btn">Get Started <img src="Images/arrow-white.png" alt=""></button>
+
+        <img src="Images/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+    </nav>
+    <!--//NAVBAR-->
+
+    <div class="header">
+        <div class="header-content">
+            <h1><span>FREE</span><br><span>LANCER</span></h1>
+            <div class="btn-container">
+                <button class="btn-dark">Request call back <img src="Images/phone.png" alt=""></button>
+                <button class="btn-light">Know more <img src="Images/arrow-black.png" alt=""></button>
+            </div>
+            <p>Passionate UI/UX designers with 10+ years of experience.</p>
+        </div>
+
+        <img src="Images/user.png" alt="" class="user-img">
+    </div>
+
+    <script>
+        let navbar = document.querySelector('nav');
+        let menulinks = document.getElementById("menu-links");
+
+        function togglemenu() {
+            menulinks.classList.toggle('show-menu')
+        }
+
+        window.onscroll = function () {
+            if (window.scrollY > 0) {
+                navbar.style.background = '#eefff9';
+            } else {
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+
+</html>
