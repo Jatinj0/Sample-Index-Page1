@@ -112,12 +112,12 @@ nav .logo {
 }
 
 .user-img {
+    height: 50%;
     width: 80%;
     max-width: 500px;
     position: absolute;
     right: 13%;
     bottom: 0;
-    height: 50%;
 }
 
 /**ANIMATION*/
